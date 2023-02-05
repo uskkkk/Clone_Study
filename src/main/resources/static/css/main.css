@@ -1,0 +1,28 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    height: 3.0rem;
+    border-bottom: 1px solid lightgray;
+
+}
+
+ul {
+    margin: auto;
+    line-height: 45px;
+}
+
+li {
+    list-style: none;
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.wd95rm {
+    width: 8.5rem;
+}

@@ -3,8 +3,29 @@
 <mapper namespace="com.kimsmile.clone_instagram.mapper.UserMapper">
 
     <insert id="insertUser" parameterType="com.kimsmile.clone_instagram.Dto.User">
-        insert into T_MEMBER (USER_NO,USER_EMAIL,USER_PASSWORD,USER_PHONE,USER_GENDER,USER_BIRTH,USER_NAME,USER_WEBSITE,USER_INTRODUCE,USER_IMAGE)
-        VALUE (USER_NO_SEQ.NEXTVAL , #{userEmail},#{userPassword},#{userPhone},#{userGender},#{userBirth},#{userName},#{userWebsite},#{userIntroduce},#{userImage})
+        insert into T_MEMBER
+            (USER_NO,USER_EMAIL
+            ,USER_PASSWORD
+            ,USER_PHONE
+            ,USER_GENDER
+            ,USER_BIRTH
+            ,USER_NAME
+            ,USER_WEBSITE
+            ,USER_INTRODUCE
+            ,USER_IMAGE)
+        VALUES
+               (USER_NO_SEQ.NEXTVAL
+               , #{userEmail}
+               ,#{userPassword}
+               ,#{userPhone}
+               ,#{userGender}
+               ,#{userBirth}
+               ,#{userName}
+               ,#{userWebsite}
+               ,#{userIntroduce}
+               ,#{userImage}
+               ,SYSDATE
+               ,SYSDATE)
     </insert>
 
 </mapper>
