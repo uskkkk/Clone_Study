@@ -63,6 +63,8 @@ a {
     justify-content: center;
     margin: 0 -2%;
     transform: rotate(-12deg) skew(-12deg);
+
+
 }
 .box-divider--light-all-2 {
     box-shadow: inset 0 0 0 2px #e3e8ee;
